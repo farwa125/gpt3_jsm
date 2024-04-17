@@ -1,0 +1,76 @@
+.gpt3__possibility {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Ensures alignment is centered */
+}
+
+.gpt3__possibility-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 2rem;
+    overflow: hidden; /* Prevents overflow issues */
+}
+
+.gpt3__possibility-image img {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+    max-width: 500px; /* Limits image size */
+}
+
+.gpt3__possibility-content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    color: white; /* Ensures text color is white */
+}
+
+.gpt3__possibility-content h4 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #71E5FF; /* Specific color for the first h4 */
+}
+
+.gpt3__possibility-content h4:last-child {
+    color: #ff8A71; /* Specific color for the last h4 */
+}
+
+.gpt3__possibility-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    margin: 1rem 0;
+    color: inherit; /* Inherits white color from parent */
+}
+
+.gpt3__possibility-content p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+    color: inherit; /* Inherits white color from parent */
+}
+
+@media screen and (max-width: 950px) {
+    .gpt3__possibility {
+        flex-direction: column;
+    }
+
+    .gpt3__possibility-image {
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .gpt3__possibility-image img {
+        max-width: 100%; /* Ensures it fits mobile screens */
+        height: auto; /* Keeps aspect ratio intact */
+    }
+}

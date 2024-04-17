@@ -1,0 +1,15 @@
+.gpt3__brand {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 2rem; /* Add padding for spacing */
+}
+
+.gpt3__brand div {
+    flex-basis: calc(20% - 1rem); /* Adjust the width of each item */
+    margin: 0.5rem; /* Adjust margin for spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
